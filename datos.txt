@@ -1,0 +1,64 @@
+Como configurar hostinger con github -> https://www.youtube.com/watch?v=RwBcNPybF4Q
+
+Github                  -> https://github.com/innovationsprint
+
+Acceso a Hostinger      -> https://hpanel.hostinger.com/websites/impulsatudinero.com
+
+uso de github y vscode  -> https://www.youtube.com/watch?v=2CT_OZSOTpQ
+github y hostinger      -> https://www.youtube.com/watch?v=OrMpKvcLPw8
+
+API                     -> https://financeapi.net/dashboard
+Password                -> GRj:h"82nErGueS
+Key                     -> oN5iRYob9YBZP9Hv3PEm81CHuJuN5ywar6LVIW98
+
+API                     -> https://finnhub.io/dashboard
+Key                     -> cp71kb1r01qpb9rafle0cp71kb1r01qpb9rafleg
+Verificar API           -> curl -X GET "https://finnhub.io/api/v1/quote?symbol=AAPL&token=cp71kb1r01qpb9rafle0cp71kb1r01qpb9rafleg"
+
+
+Abrir el vhost  -> sudo open -a "Visual Studio Code" /opt/homebrew/etc/httpd/extra/httpd-vhosts.conf
+                -> sudo apachectl restart
+
+Accesar a phpmyadmin    -> http://phpmyadmin.test/index.php?route=/&route=%2F
+
+Instalar Breeze -> composer require laravel/breeze --dev
+                -> php artisan breeze:install
+                -> npm install
+                -> ajustar datos de la BD
+                -> php artisan migrate
+                -> npm run dev
+
+Github          -> git --version
+Registrarse     -> git config --global user.name "innovationsprint"
+                -> git config -- global user.mail  "info@innovations.com.pa"
+Listar          -> git config --list
+
+Iniciar un proyecto en git  -> primero autorizo la conexion de vscode con github
+                            -> creamos el repositorio en github
+                            -> copiamos el link en github
+                            -> https://github.com/innovationsprint/impulsatudinero.git
+                            -> estando en la carpeta que quiero subir
+                            -> git https://github.com/innovationsprint/impulsatudinero.git
+                            -> abro la carpeta con vscode
+
+Para remover el proyecto en vs.code    -> rm -rf .git
+
+Limpiar cache DNS       -> sudo killall -HUP mDNSResponder
+
+Editar los include      -> sudo open -a "Visual Studio Code" /opt/homebrew/etc/httpd/httpd.conf
+Crear virtual host      -> code /opt/homebrew/etc/httpd/extra/httpd-vhosts.conf
+                        -> sudo open -a "Visual Studio Code" /opt/homebrew/etc/httpd/extra/httpd-vhosts.conf
+Editar hosts            -> sudo nano /etc/hosts
+Reiniciar servidor      -> sudo apachectl restart
+
+Ver archivos ocultos Mac    -> defaults write com.apple.Finder AppleShowAllFiles true
+Reiniciar Finder            -> killall Finder
+Ocultarlos                  -> defaults write com.apple.Finder AppleShowAllFiles false
+
+Borrar BD                   -> php artisan migrate:reset
+Correr migracion y seed     -> php artisan migrate:fresh --seed
+
+Para crear un pdf el proyecto en vscode     -> brew install tree (desde terminal)
+                                            -> tree . > project_structure.txt
+
+Limpiar LOGS      -> truncate -s 0 storage/logs/laravel.log
